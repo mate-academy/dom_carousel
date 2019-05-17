@@ -1,0 +1,32 @@
+body {
+  margin: 0 auto;
+  min-width: 1110px;
+}
+
+.wrap {
+  display: flex;
+}
+
+.container {
+  width: 390px;
+  overflow: hidden;
+  display: flex;
+  & > img {
+    width: 130px;
+    height: 130px;
+  }
+  
+}
+
+button {
+  padding: 15px; // castom
+  width: 100px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  &:focus {
+    border: none;
+  }
+}
