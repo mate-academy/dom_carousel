@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.carusel {
+  width: 270px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .carusel .carusel_img {
+    width: 130px;
+    height: 130px; }
+  .carusel .carusel_slides {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #eee;
+    position: relative; }
+
+.carusel_buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .carusel_buttons button {
+    width: 30px;
+    cursor: pointer; }
+    .carusel_buttons button:hover {
+      background-color: #ee9000;
+      opacity: 0.8; }

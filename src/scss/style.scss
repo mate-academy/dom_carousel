@@ -1,0 +1,38 @@
+@import "_variables";
+@import "_mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.carusel {
+  width: 270px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  .carusel_img {
+    @include imgParams(130px);
+  }
+  .carusel_slides {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #eee;
+    position: relative;
+  }
+}
+
+.carusel_buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  button {
+    width: 30px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ee9000;
+      opacity: 0.8;
+    }
+  }
+}
