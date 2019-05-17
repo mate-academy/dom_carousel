@@ -1,0 +1,60 @@
+:root {
+  --conteiner-width: 390px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.disableArrow {
+  visibility: hidden;
+}
+
+.arrows {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(315deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  margin-right: 25px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.conteiner {
+  margin: 100px auto 0; 
+  display: flex;
+  width: var(--conteiner-width);
+  overflow-x: scroll;
+  font-size: 0;
+}
+
+.conteiner > img {
+  width: 130px;
+  height: 130px;
+}
+
+.button {
+  margin: 0 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
