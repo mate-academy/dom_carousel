@@ -12,4 +12,4 @@
 
 6) Finally, add some horizontal spacing between the images and move the buttons to the left ("Previous") and right ("Next") sides of the container. Style them so that they look like arrows. Add a disabled class and style a button with this class accordingly if clicking the button would have no effect (i.e., there are no more images to display).
 
-- [DEMO] (https://stasgostev.github.io/dom_carousel/src);
+- [DEMO] (https://stasgostev.github.io/dom_carousel/);
