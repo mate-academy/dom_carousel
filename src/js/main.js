@@ -1,10 +1,28 @@
 document.getElementById('previous').onclick = arrowLeft;
+document.getElementById('next').onclick = arrowRight;
+let element = document.getElementsByClassName('carusel_slides')[0];
+let counter =0;
+counter += 260;
 
-let nullPosition = 0;
+function arrowRight() {
+    console.log(arrowRight);
+    counter += 260;
+    if (counter <= 1040) {
+        element.style.right = counter + 'px';
+    } else if (element.contains.style === undefined){
+        return;
+    }
+}
+
 
 function arrowLeft() {
-    console.log('carusel');
-    nullPosition -= 260;
-    document.getElementsByClassName('carusel_slides').style.left = -260;
-  //carusel.style.left = -260 + 'px';
+    counter -= 260;
+    element.style.right = counter + 'px';
+
+    if (element.contains.style.right > 0 ) {
+        element.style.right = counter + 'px';
+    } else {
+        return;
+    }
+  
 }
