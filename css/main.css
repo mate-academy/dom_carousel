@@ -35,3 +35,11 @@ button {
 .prev {
   left: 10px;
 }
+
+.disabled {
+  opacity: 0.5;
+}
+
+non-disabled {
+  opacity: 0;
+}
