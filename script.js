@@ -1,4 +1,3 @@
-const items = document.querySelector('.items');
 const carousel = document.querySelector('.carousel');
 const buttons = document.querySelector('.buttons');
 const btnNext = document.querySelector('.next');
@@ -10,11 +9,11 @@ buttons.onclick = function (e) {
     const target = e.target;
     console.log(carousel.scrollLeft);
     if(target.nodeName === 'BUTTON') {
-        scroll(items, target.dataset.action);
+        scroll(target.dataset.action);
     }
 };
 
-function scroll(elem, action) {
+function scroll(action) {
     if(action === 'next') {
         carousel.scrollLeft += 390;
     }
