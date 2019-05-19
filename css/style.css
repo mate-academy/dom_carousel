@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  width: 1300px;
+  height: 130px;
+  margin: 0 auto;
+  margin-left: 440px;
+}
+
+.carousel-list {
+  display: inline-flex;
+  width: 390px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.carousel_btn {
+  font-size: 30px;
+  color: coral;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+}
