@@ -14,8 +14,9 @@ function arrowRight() {
 }
 
 function arrowLeft() {
+    let styleRight = element.style.right
     counter -= 260;
-    if (element.style.right > 0) {
+    if ( parseInt(styleRight.replace(/\D+/g,"")) > 0) {
         element.style.right = counter + 'px';
     } else {
         return;
