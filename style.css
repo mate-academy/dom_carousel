@@ -40,7 +40,6 @@ body {
 }
 
 .disabled {
-    cursor: pointer;
     background-color: #b3b8d3;
     color: #9498b3;
 }
