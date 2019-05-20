@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  width: 260px;
+  height: 130px;
+  overflow: hidden;
+}
+
+img {
+  width: 130px;
+  height: 130px;
+}
