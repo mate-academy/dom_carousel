@@ -22,7 +22,6 @@
   margin: auto;
 }
 
-.arrow:hover {
-  border-radius: 50%;
-  transform: scale(1.1)
+.disabled {
+ opacity: 0.5;
 }
