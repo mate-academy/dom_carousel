@@ -2,11 +2,11 @@ const left = document.querySelector('.left');
 const right = document.querySelector('.right');
 const list = document.querySelector('.imgList');
 
-left.onclick = function () {
-    list.scrollLeft += 260;
-}
+left.addEventListener('click', function(e){
+    list.scrollLeft += 390;
+});
 
-right.onclick = function () {
-    list.scrollLeft -= 260
-}
+right.addEventListener('click', function(e){
+    list.scrollLeft -= 390;
+});
 

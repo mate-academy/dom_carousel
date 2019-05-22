@@ -2,13 +2,13 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 .container {
     display: flex;
 }
 #list {
-
     display: flex;
     overflow: hidden;
     padding: 0;
@@ -17,6 +17,7 @@ body {
     border-radius: 4px;
     width: 390px;
     margin: 100px auto;
+    position: relative;
 }
 
 li {
@@ -28,12 +29,18 @@ li {
 button {
     width: 100px;
     height: 20px;
-    background-color: grey;
+    background-color: white;
     border-radius: 4px;
     border: 1px solid black;
     cursor: pointer;
+    position: absolute;
 }
 
 .left {
-margin-left: 550px;
+    margin-top: 150px;
+    margin-left: 360px;
+}
+.right {
+    margin-top: 150px;
+    margin-left: 820px;
 }
