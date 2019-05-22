@@ -1,20 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
-  let next = document.querySelector('.next');
-  next.onclick = function() {
-    document.querySelector(".container").scrollLeft += 390;
-    if (document.querySelector(".container").scrollLeft >= 900) {
+  const container = document.querySelector(".container");
+  const next = document.querySelector('.next');
+  const width = container.offsetWidth;
+  const imgWidth = 130;
+  next.addEventListener('click', function(){
+    container.scrollLeft += width;
+    if (container.scrollLeft >= (width * 2 + imgWidth) ) {
       next.classList.add('disabled');
-    }else if (document.querySelector(".container").scrollLeft >= 390) { 
+    }else if (container.scrollLeft >= width) { 
       prev.classList.remove('disabled');
     }
-  };
-  let prev = document.querySelector('.prev');
-  prev.onclick = function() {
-    document.querySelector(".container").scrollLeft -= 390;
-    if (document.querySelector(".container").scrollLeft < 900 && document.querySelector(".container").scrollLeft > 391) {
+  })
+
+  const prev = document.querySelector('.prev');
+  prev.addEventListener('click', function(){
+    container.scrollLeft -= width;
+    if (container.scrollLeft < width * 3 && container.scrollLeft > width) {
       next.classList.remove('disabled');
-    }else if (document.querySelector(".container").scrollLeft === 0) {
+    }else if (container.scrollLeft === 0) {
       prev.classList.add('disabled');
     }
-  };
+  });
 }, false );
