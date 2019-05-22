@@ -2,7 +2,7 @@
 
 1) Create a 1300 pixel-wide container and put there 10 images from the [img/](img/) folder so that they are all in the same row. Each of the images is 130×130 pixels.
 
-2) Change the width of the container to 260 pixels and use the `overflow` CSS property to hide all the images but the first two.
+2) Change the width of the container to 260 pixels and use the `overflow` CSS property to hide all the images but the first two. You may alternatively want to use another wrapper container for that and set the new width and the `overflow` property to the wrapper instead of the inner container which will keep its width of 1300px.
 
 3) Place a button under the container. When the user presses the button, scroll the container horizontally with JavaScript so that it shows the next two images. You can do it without any animations. Use the `scrollLeft` JS property of the container.
 
