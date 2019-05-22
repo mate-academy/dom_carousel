@@ -5,16 +5,15 @@ const btnPrev = document.querySelector('.prev');
 
 checkScroll();
 
-buttons.onclick = function (e) {
-    const target = e.target;
-    console.log(carousel.scrollLeft);
-    if(target.nodeName === 'BUTTON') {
+buttons.addEventListener('click', function (e) {
+    const {target} = e;
+    if (target.nodeName === 'BUTTON') {
         scroll(target.dataset.action);
     }
-};
+});
 
 function scroll(action) {
-    if(action === 'next') {
+    if (action === 'next') {
         carousel.scrollLeft += 390;
     }
     if (action === 'prev') {
@@ -25,18 +24,15 @@ function scroll(action) {
 
 
 function checkScroll() {
+    console.log( btnPrev.classList);
     if (carousel.scrollLeft === 0) {
-        btnPrev.disabled = true;
-        btnPrev.style.opacity = "0.5";
+        btnPrev.classList.add('disabled');
     } else {
-        btnPrev.disabled = false;
-        btnPrev.style.opacity = "1";
+        btnPrev.classList.remove('disabled');
     }
     if (carousel.scrollLeft > 909.5) {
-        btnNext.disabled = true;
-        btnNext.style.opacity = "0.5";
+        btnNext.classList.add('disabled');
     } else {
-        btnNext.disabled = false;
-        btnNext.style.opacity = "1";
+        btnNext.classList.remove('disabled');
     }
 }
