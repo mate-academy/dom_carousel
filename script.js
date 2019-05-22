@@ -1,38 +1,38 @@
-const conteiner = document.querySelector(".conteiner");
+const container = document.querySelector(".container");
 const leftArrow = document.querySelector(".left");
 const rightArrow = document.querySelector(".right");
+let containerWidth;
 
 const quantityElemnts = parseInt(prompt("How much elements would you like to see?", "cancell for default"));
 if (typeof quantityElemnts === 'number' && !isNaN(quantityElemnts)) {
-  alert("IN!")
-  conteiner.style.width = quantityElemnts * 130 + "px";
+  containerWidth = quantityElemnts * 130;
+  container.style.setProperty('--container-width', `${containerWidth}px`)
 }
 
-const conteinerWidth = conteiner.offsetWidth;
-const lastSrcollPos = 1300 - conteinerWidth;
+const lastSrcollPos = 1300 - containerWidth;
 
 visibilityToggle();
 
 leftArrow.addEventListener('click', handler);
 rightArrow.addEventListener('click', handler);
 
-function visibilityToggle () {
-  if(conteiner.scrollLeft === 0) {
-    leftArrow.classList.add('disableArrow');
-  } else if(conteiner.scrollLeft === lastSrcollPos) {
-    rightArrow.classList.add('disableArrow');
+function visibilityToggle() {
+  if (container.scrollLeft === 0) {
+    leftArrow.classList.add('disable_arrow');
+  } else if (container.scrollLeft === lastSrcollPos) {
+    rightArrow.classList.add('disable_arrow');
   } else {
-    leftArrow.classList.remove('disableArrow');
-    rightArrow.classList.remove('disableArrow');
+    leftArrow.classList.remove('disable_arrow');
+    rightArrow.classList.remove('disable_arrow');
   }
 }
 
 function handler() {
-  if(this.className.indexOf('left') !== -1) {
-    conteiner.scrollLeft -= conteinerWidth;
+  if (this.classList.contains('left')) {
+    container.scrollLeft -= containerWidth;
     visibilityToggle()
-  } else if(this.className.indexOf('right') !== -1) {
-    conteiner.scrollLeft += conteinerWidth;
+  } else if (this.classList.contains('right')) {
+    container.scrollLeft += containerWidth;
     visibilityToggle();
   } else {
     console.log('error: left or right class not found');

@@ -1,5 +1,5 @@
 :root {
-  --conteiner-width: 390px;
+  --container-width: 390px;
 }
 
 * {
@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-.disableArrow {
+.disable_arrow {
   visibility: hidden;
 }
 
@@ -39,15 +39,16 @@ body {
   height: 100%;
 }
 
-.conteiner {
+.container {
   margin: 100px auto 0; 
   display: flex;
-  width: var(--conteiner-width);
+  width: var(--container-width);
   overflow-x: scroll;
   font-size: 0;
+  transition: all 1s;
 }
 
-.conteiner > img {
+.container > img {
   width: 130px;
   height: 130px;
 }
