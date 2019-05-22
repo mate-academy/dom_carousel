@@ -1,7 +1,6 @@
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
 const container = document.querySelector('.container');
-console.log(window.onload);
 
 nextButton.addEventListener('click', function () {
     prevButton.disabled = false;
