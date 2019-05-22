@@ -1,0 +1,48 @@
+$size: 130px;
+$quantityPictures: 3;
+$backgroundColor: grey;
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $size * $quantityPictures;
+    height: $size;
+    border-radius: 25px;
+    background-color: $backgroundColor;
+    padding: 10px 35px;
+    
+    button {
+        position: absolute;
+        display: flex;
+        background-color: $backgroundColor;
+        font-size: 20px;
+        border: 1px solid rgb(140,140,140);
+        &[data-direction = "left"] {
+            left: 0;
+        }
+
+        &[data-direction = "right"] {
+            right: 0; 
+        }
+    }
+
+    .img_wrapper {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: $size * $quantityPictures;
+        overflow: hidden;
+        background-color: $backgroundColor;
+        
+        .img_container {        
+            display: flex;
+        }
+    }
+}

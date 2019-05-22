@@ -11,3 +11,5 @@
 5) Now change the width of the container to 390 pixels and do the same thing with three images being shown instead of two. You need to carefully handle the case when there are less than three images left to display. So, when you’re showing images 7-9 and click the button "Next", display 8-10. Similarly, when showing 2-4 and click "Previous", display 1-3.
 
 6) Finally, add some horizontal spacing between the images and move the buttons to the left ("Previous") and right ("Next") sides of the container. Style them so that they look like arrows. Add a disabled class and style a button with this class accordingly if clicking the button would have no effect (i.e., there are no more images to display).
+
+- [DEMO] (https://stasgostev.github.io/dom_carousel/);
