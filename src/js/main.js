@@ -21,14 +21,13 @@ left.onclick = function () {
 };
 
 right.onclick = function() {
-  left.style.visibility = '';
+  left.style.visibility = 'visible';
   const right = document.getElementById('right');
   if (counter === -(6 * widthOfPictures)) {
     counter = -(4 * widthOfPictures); 
   }
   counter -= 3 * widthOfPictures;
-  shiftPictures();
-  console.log(counter);
+  shiftPictures();  
   if (counter === -7 * widthOfPictures) {
     right.style.visibility = 'hidden';    
   }           

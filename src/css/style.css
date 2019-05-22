@@ -37,3 +37,7 @@ img {
   height: 50px;
 }
 
+.left {
+  visibility: hidden;
+}
+
