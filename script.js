@@ -7,6 +7,8 @@ const quantityElemnts = parseInt(prompt("How much elements would you like to see
 if (typeof quantityElemnts === 'number' && !isNaN(quantityElemnts)) {
   containerWidth = quantityElemnts * 130;
   container.style.setProperty('--container-width', `${containerWidth}px`)
+} else {
+  containerWidth = 390
 }
 
 const lastSrcollPos = 1300 - containerWidth;
