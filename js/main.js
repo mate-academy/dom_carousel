@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function(){
   next.addEventListener('click', function(){
     container.scrollLeft += width;
     if (container.scrollLeft >= (width * 2 + imgWidth) ) {
-      next.classList.add('disabled');
-    }else if (container.scrollLeft >= width) { 
-      prev.classList.remove('disabled');
+      next.setAttribute("disabled", "disabled");
+    }else{ 
+      prev.removeAttribute("disabled", "disabled");
     }
   })
 
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function(){
   prev.addEventListener('click', function(){
     container.scrollLeft -= width;
     if (container.scrollLeft < width * 3 && container.scrollLeft > width) {
-      next.classList.remove('disabled');
+      next.removeAttribute("disabled", "disabled");
     }else if (container.scrollLeft === 0) {
-      prev.classList.add('disabled');
+      prev.setAttribute("disabled", "disabled");
     }
   });
 }, false );
