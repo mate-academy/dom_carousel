@@ -12,15 +12,15 @@
   border-radius: 15px;
   margin: 0 auto;
   overflow: hidden;
-  //position: relative;
+  background-color: #eee;
+  
   .carusel_img {
     @include imgParams(130px);
   }
   .carusel_slides {
+    transition: 1s;
     display: flex;
-    //position: absolute;
     flex-wrap: nowrap;
-    background-color: #eee;
     position: relative;
    }
 }

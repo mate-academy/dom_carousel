@@ -7,14 +7,15 @@
   border: 2px solid #ccc;
   border-radius: 15px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #eee; }
   .carusel .carusel_img {
     width: 130px;
     height: 130px; }
   .carusel .carusel_slides {
+    transition: 1s;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #eee;
     position: relative; }
 
 .carusel_buttons {
