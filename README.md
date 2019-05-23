@@ -1,5 +1,7 @@
 # Carousel
 
+- [Prewiew](https://laliquenoare.github.io/dom_carousel/)
+
 1) Create a 1300 pixel-wide container and put there 10 images from the [img/](img/) folder so that they are all in the same row. Each of the images is 130×130 pixels.
 
 2) Change the width of the container to 260 pixels and use the `overflow` CSS property to hide all the images but the first two. You may alternatively want to use another wrapper container for that and set the new width and the `overflow` property to the wrapper instead of the inner container which will keep its width of 1300px.
