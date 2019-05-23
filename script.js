@@ -8,20 +8,21 @@ arrows.forEach((arrow) => {
 })
 
 let shiftValue = 0;
+const stepShifting = 390;
 
 function arrowsHandler() {
 
   if (this.classList.contains('left')) {
-    shiftValue += 390;
+    shiftValue += stepShifting;
   } else {
-    shiftValue -= 390;
+    shiftValue -= stepShifting;
   }
 
   if (shiftValue > 0) {
     shiftValue = 0;
     arrows[0].classList.add('disabled');
-  } else if (shiftValue <= -sliderImages.clientWidth + 390) {
-    shiftValue = -sliderImages.clientWidth + 390;
+  } else if (shiftValue <= -sliderImages.clientWidth + stepShifting) {
+    shiftValue = -sliderImages.clientWidth + stepShifting;
     arrows[1].classList.add('disabled');
   } else {
     arrows.forEach((arrow) => arrow.classList.remove('disabled'));
