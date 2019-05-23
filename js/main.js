@@ -5,19 +5,17 @@ document.addEventListener('DOMContentLoaded', function(){
   const imgWidth = 130;
   next.addEventListener('click', function(){
     container.scrollLeft += width;
+    prev.removeAttribute("disabled", "disabled");
     if (container.scrollLeft >= (width * 2 + imgWidth) ) {
       next.setAttribute("disabled", "disabled");
-    }else{ 
-      prev.removeAttribute("disabled", "disabled");
     }
   })
 
   const prev = document.querySelector('.prev');
   prev.addEventListener('click', function(){
     container.scrollLeft -= width;
-    if (container.scrollLeft < width * 3 && container.scrollLeft > width) {
-      next.removeAttribute("disabled", "disabled");
-    }else if (container.scrollLeft === 0) {
+    next.removeAttribute("disabled", "disabled");
+    if (container.scrollLeft === 0) {
       prev.setAttribute("disabled", "disabled");
     }
   });
