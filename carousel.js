@@ -2,10 +2,10 @@ const prev = document.querySelector('.arrow-prev');
 const next = document.querySelector('.arrow-next');
 const slideElement = document.querySelector('.images');
 
-next.onclick = function () {
+next.addEventListener('click', (event)=> {
   slideElement.scrollLeft += 260;
-}
+});
 
-prev.onclick = function () {
+prev.addEventListener('click', (event)=> {
   slideElement.scrollLeft -= 260;
-}
+});

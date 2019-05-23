@@ -2,12 +2,11 @@
   display: flex;
 }
 
-#carousel {
+.images {
   width: 390px;
   display: flex;
   overflow: hidden;
   padding: 0;
-  position: relative;
   margin: 50px auto;
   border: 1px solid black;
   border-radius: 3px;
@@ -21,25 +20,22 @@ li {
 }
 
 button {
-  position: absolute;
   width: 100px;
   height: 20px;
   background-color: #C4C4C4;
-  /* color: black;
-  text-align: center; */
   border-radius: 3px;
   border: 1px solid black;
   cursor: pointer;
+  margin-top: 100px;
+  display: inline;
 }
 
 .arrow-prev {
-  left: 350px;
-  top: 110px;
+  margin-left: 300px;
 }
 
 .arrow-next {
-  right: 350px;
-  top: 110px;
+  margin-right: 300px;
 }
 
 i {
@@ -50,9 +46,9 @@ i {
 }
 
 .right {
-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .left {
-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
