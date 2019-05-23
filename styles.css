@@ -1,11 +1,55 @@
 .container {
   display: flex;
-  width: 260px;
-  height: 130px;
-  overflow: hidden;
+  width: 1500px;
+  height: 170px;
+}
+
+.hider {
+width: 450px;
+overflow: hidden;
 }
 
 img {
   width: 130px;
   height: 130px;
+  margin-right: 20px;
+}
+
+button{
+  display: block;
+  position: absolute;
+}
+
+#scrollRightButton {
+  top: 200px;
+  left: 10px;
+}
+
+#scrollLeftButton {
+  top: 200px;
+  left: 400px;
+}
+
+#button-holder {
+  display: flex;
+  justify-items: center;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
 }
