@@ -1,0 +1,31 @@
+body {
+  margin: 0 auto;
+  min-width: 1110px; }
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container {
+  width: 390px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container > img {
+    width: 130px;
+    height: 130px; }
+
+button {
+  padding: 15px;
+  width: 100px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px; }
+  button:focus {
+    border: none; }
+
+/*# sourceMappingURL=main.css.map */
