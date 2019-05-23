@@ -25,7 +25,7 @@ function arrowsHandler() {
     shiftValue = -sliderImages.clientWidth + stepShifting;
     arrows[1].classList.add('disabled');
   } else {
-    arrows.forEach((arrow) => arrow.classList.remove('disabled'));
+    arrows.forEach(arrow => arrow.classList.remove('disabled'));
   }
 
   sliderImages.style.transform = `translateX(${shiftValue +"px"})`;
