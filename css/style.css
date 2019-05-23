@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+
+}
+
+.carousel-list {
+  list-style: none;
+  width: 390px;
+  padding: 0;
+}
+
+.carousel-slide {
+  display: flex;
+  overflow: hidden;
+
+}
+
+.carousel_btn {
+  font-size: 20px;
+  color: #fff;
+  background-color: blueviolet;
+  outline: none;
+  border: none;
+}
+
+.carousel_btn:hover {
+  background-color: red;
+}
+
+.carousel_btn:disabled {
+  opacity: .4;
+}
+
+img[alt="carousel-photo"] {
+  width: 130px;
+  display: block;
+}
