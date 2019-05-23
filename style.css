@@ -1,0 +1,12 @@
+#container {
+	width: 390px;
+	overflow-x: scroll;
+}
+
+#list {
+	width: 99999%;
+}
+
+img {
+	float: left;
+}
