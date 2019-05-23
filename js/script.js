@@ -1,16 +1,34 @@
 const carousel = document.querySelector('.carousel');
-const arrowPrev = carousel.querySelector('.btn-prev');
-const arrowNext = carousel.querySelector('.btn-next');
-const carousel_slider = carousel.querySelector('.carousel-slide');
+const arrowRight = carousel.querySelector('#right');
+const arrowLeft = carousel.querySelector('#left');
+let listWidth = carousel.querySelector('.carousel-list').offsetWidth;
+let scroll = carousel.querySelector('.carousel-slide');
+let scrollPosition = 0;
 
+const maxWidthCarousel = carousel.querySelectorAll('img').length
+* carousel.querySelector('img').offsetWidth;
 
-
-carousel.addEventListener('click', function(event) {
-  let target = event.target;
-  if(target === arrowPrev) {
-    carousel_slider.scrollLeft += 130;
-  }
-  if(target === arrowNext) {
-    carousel_slider.scrollLeft -= 130;
-  }
+carousel.addEventListener("click", function(event) {
+  clickArrow[event.target.dataset.arrow]();
 });
+
+let clickArrow = {
+  right: function() {
+    arrowLeft.disabled = false;
+    scrollPosition += listWidth;
+    if (scrollPosition > maxWidthCarousel - listWidth) {
+      scrollPosition = maxWidthCarousel - listWidth;
+      event.target.disabled = true;
+    }
+    scroll.scrollLeft = `${scrollPosition}`;
+  },
+  left: function() {
+    arrowRight.disabled = false;
+    scrollPosition -= listWidth;
+    if (scrollPosition <= 0) {
+      scrollPosition = 0;
+      event.target.disabled = true;
+    }
+    scroll.scrollLeft = `${scrollPosition}`;
+  }
+}

@@ -6,25 +6,40 @@ body {
 .carousel {
   display: flex;
   align-items: center;
-  width: 1300px;
-  height: 130px;
-  margin: 0 auto;
-  margin-left: 440px;
+  justify-content: center;
+  margin: 100px auto;
+
 }
 
 .carousel-list {
-  display: inline-flex;
-  width: 390px;
   list-style: none;
-  overflow: hidden;
+  width: 390px;
   padding: 0;
 }
 
+.carousel-slide {
+  display: flex;
+  overflow: hidden;
+
+}
+
 .carousel_btn {
-  font-size: 30px;
-  color: coral;
-  text-decoration: none;
-  background: none;
-  border: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: blueviolet;
   outline: none;
+  border: none;
+}
+
+.carousel_btn:hover {
+  background-color: red;
+}
+
+.carousel_btn:disabled {
+  opacity: .4;
+}
+
+img[alt="carousel-photo"] {
+  width: 130px;
+  display: block;
 }
