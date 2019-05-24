@@ -5,8 +5,8 @@ const btnPrev = document.querySelector('.prev');
 
 checkScroll();
 
-buttons.addEventListener('click', function (e) {
-    const {target} = e;
+buttons.addEventListener('click', (event) => {
+    const { target } = event;
     if (target.nodeName === 'BUTTON') {
         scroll(target.dataset.action);
     }
@@ -24,13 +24,12 @@ function scroll(action) {
 
 
 function checkScroll() {
-    console.log( btnPrev.classList);
     if (carousel.scrollLeft === 0) {
         btnPrev.classList.add('disabled');
     } else {
         btnPrev.classList.remove('disabled');
     }
-    if (carousel.scrollLeft > 909.5) {
+    if (carousel.scrollLeft > 909) {
         btnNext.classList.add('disabled');
     } else {
         btnNext.classList.remove('disabled');
