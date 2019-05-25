@@ -1,24 +1,23 @@
-document.getElementById('previous').onclick = arrowLeft;
-document.getElementById('next').onclick = arrowRight;
+let arrowLeft = document.getElementById('previous');
+let arrowRight = document.getElementById('next');
 let element = document.getElementsByClassName('carusel_slides')[0];
-let counter =0;
+let counter =260;
+let initialValue = 260;
+let moveRight =  element.style.right = counter + 'px';
 
-function arrowRight() {
-  counter += 260;
-  if(counter > 1040) counter = 1040;
-  if (counter <= 1040) {
-     element.style.right = counter + 'px';
-  } 
-  return;
-}
+arrowRight.addEventListener('click', ()=> {
+  counter += initialValue;
+  arrowRight.disabled = false;
+  element.style.right = counter + 'px';
+  if (counter > 780) arrowRight.disabled = true;
+  arrowLeft.disabled = false;
+});
 
-function arrowLeft() {
-  let styleRight = element.style.right;
-  counter -= 260;
-  if(counter < 0) counter = 0;
-  if ( parseInt(styleRight.replace(/\D+/g,"")) > 0) {
-      element.style.right = counter + 'px';
-  } 
-  return;
-}
-
+arrowLeft.addEventListener('click', ()=> {
+  arrowLeft.disabled = true;
+  arrowRight.disabled = false;
+  counter -= initialValue;
+  arrowLeft.disabled = false;
+  element.style.right = (counter - initialValue) + 'px';
+  if (parseInt(getComputedStyle(element).right) <= 260) arrowLeft.disabled = true;
+ }); 

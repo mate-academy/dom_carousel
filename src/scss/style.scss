@@ -7,7 +7,7 @@
 }
 
 .carusel {
-  width: 260px;
+  width: 390px;
   border: 2px solid #ccc;
   border-radius: 15px;
   margin: 0 auto;
@@ -18,11 +18,11 @@
     @include imgParams(130px);
   }
   .carusel_slides {
-    transition: 1s;
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-   }
+    transition: all 1s;
+  }
 }
 
 .carusel_buttons {
