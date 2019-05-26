@@ -11,7 +11,6 @@ let shiftValue = 0;
 const stepShifting = 390;
 
 function arrowsHandler() {
-
   if (this.classList.contains('left')) {
     shiftValue += stepShifting;
   } else {
