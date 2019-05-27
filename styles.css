@@ -26,21 +26,27 @@ li {
     list-style: none;
 }
 
-button {
-    width: 100px;
-    height: 20px;
-    background-color: white;
-    border-radius: 4px;
-    border: 1px solid black;
-    cursor: pointer;
+.left_button {
+    border: 40px solid transparent;
+    border-right-color: gold;
     position: absolute;
+    top: 120px;
+    left: 350px;
+ }
+
+.right_button {
+    border: 40px solid transparent;
+    border-left-color: gold;
+    border-right: 0;
+    position: absolute;
+    top: 120px;
+    left: 851px;
 }
 
-.left {
-    margin-top: 150px;
-    margin-left: 360px;
-}
-.right {
-    margin-top: 150px;
-    margin-left: 820px;
+.left_button:disabled {
+    border: 40px solid transparent;
+    border-right-color: grey;
+    position: absolute;
+    top: 120px;
+    left: 350px;
 }
