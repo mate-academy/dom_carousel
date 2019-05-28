@@ -19,7 +19,6 @@
   }
   .carusel_slides {
     display: flex;
-    flex-wrap: nowrap;
     position: relative;
     transition: all 1s linear;
   }
@@ -27,7 +26,6 @@
 
 .carusel_buttons {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   button {
     width: 30px;
