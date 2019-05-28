@@ -7,17 +7,16 @@ body {
 
 .container {
     display: flex;
+    position: relative;
 }
-#list {
+.imgList {
     display: flex;
     overflow: hidden;
     padding: 0;
-    position: relative;
     background-color: #C4C4C4;
     border-radius: 4px;
     width: 390px;
     margin: 100px auto;
-    position: relative;
 }
 
 li {
@@ -43,10 +42,7 @@ li {
     left: 851px;
 }
 
-.left_button:disabled {
-    border: 40px solid transparent;
-    border-right-color: grey;
-    position: absolute;
-    top: 120px;
-    left: 350px;
+.disabled {
+    opacity: 0.5;
 }
+
