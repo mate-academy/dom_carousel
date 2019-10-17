@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 390px;
+  overflow: hidden;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.prev {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: url('img/prev.png') no-repeat center center;
+  background-size: cover;
+}
+
+.next {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: url('img/next.png') no-repeat center center;
+  background-size: cover;
+}
+
+.disable {
+  visibility: hidden;
+}
