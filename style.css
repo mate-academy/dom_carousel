@@ -1,0 +1,34 @@
+.images {
+  display: flex;
+  width: 1300px;
+  position: relative;
+}
+
+.image {
+  width: 130px;
+  height: 130px;
+}
+
+.overflow {
+  width: 390px;
+  overflow: hidden;
+  margin: 100px auto 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 50px auto;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10%;
+  background-color: rgb(247, 247, 11);
+  cursor: pointer;
+}
