@@ -55,6 +55,6 @@ class Carousel {
 
 }
 
-let carousel = new Carousel();
+const carousel = new Carousel();
 carousel.createHtmlCode();
 carousel.addEvents();
