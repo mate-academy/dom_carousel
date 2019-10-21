@@ -19,21 +19,29 @@ class Carousel {
   }
 
   eventNext() {
-    let imgList = document.querySelector('.images');
-    if (this.positionCounter === -780) this.positionCounter -=130;
-    else if (this.positionCounter > -780) this.positionCounter -= 390;
+    const imgList = document.querySelector('.images');
+    if (this.positionCounter === -780) {
+      this.positionCounter -=130;
+    }
+    else if (this.positionCounter > -780) {
+      this.positionCounter -= 390;
+    }
     imgList.setAttribute('style', `left: ${this.positionCounter}px`);
   }
 
   eventPrevious() {
-    let imgList = document.querySelector('.images');
-    if (this.positionCounter === -130) this.positionCounter += 130;
-    else if (this.positionCounter < 0) this.positionCounter += 390;
+    const imgList = document.querySelector('.images');
+    if (this.positionCounter === -130) {
+      this.positionCounter += 130;
+    }
+    else if (this.positionCounter < 0) {
+      this.positionCounter += 390;
+    }
     imgList.setAttribute('style', `left: ${this.positionCounter}px`);
   }
 
   addEvents() {
-    let buttons = document.querySelector('.buttons').children;
+    const buttons = document.querySelector('.buttons').children;
     
     for (const button of buttons) {
       if (button.textContent === 'Next') {
