@@ -1,0 +1,27 @@
+.container {
+  margin-top: 100px;
+}
+
+.images {
+  display: flex;
+  width: 390px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  width: 230px;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.disabled {
+ opacity: 0.5;
+}
