@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+.container { 
+  margin: 10px auto 0;  
+  width: 390px;
+  overflow: hidden;  
+}
+
+.pictures { 
+  display: grid;
+  grid-template-columns: repeat(10, 130px); 
+ 
+}
+.pictures390 {
+  transform: translateX(-390px);
+}
+
+img {
+  width: 130px;
+  height: 130px;
+      
+}
+
+.rows {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 50px;
+  grid-column-gap: 20px;
+  
+}
+
+.left,
+.right {
+  transform: translateX(0); 
+  width: 50px;
+  height: 50px;
+}
+
+.left {
+  visibility: hidden;
+}
+
