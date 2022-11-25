@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+}
+
+.images {
+  width: 390px;
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 50px auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #C4C4C4;
+}
+
+li {
+  width: 130px;
+  height: 130px;
+  list-style: none;
+}
+
+button {
+  width: 100px;
+  height: 20px;
+  background-color: #C4C4C4;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 100px;
+  display: inline;
+}
+
+.arrow-prev {
+  margin-left: 300px;
+}
+
+.arrow-next {
+  margin-right: 300px;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
