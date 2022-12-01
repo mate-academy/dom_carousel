@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+.carousel {
+    display: flex;
+    width: 390px;
+    overflow: hidden;
+}
+
+.items {
+    display: flex;
+}
+
+.carousel img {
+    width: 130px;
+    height: 130px;
+}
+
+.buttons {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.buttons button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: url('./img/img_137524.png') no-repeat top left;
+    background-size: 30px 30px;
+}
+
+
+.next{
+    transform: scaleX(-1);
+}
+
+.disabled {
+    opacity : 0.5;
+    pointer-events: none;
+}
